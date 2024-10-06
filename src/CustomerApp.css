@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Fredoka', sans-serif;
+}
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    margin: 100px auto;
+    padding: 20px;
+    margin-left: 80px;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    width: 1322px;
+    /* height: 842px; */
+    top: 144px;
+    left: 94px;
+   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    top: 0;
+}
+
+header h1 {
+    font-size: 20px;
+    color: #333;
+}
+
+.search-export {
+    display: flex;
+    align-items: center;
+}
+
+.search-export .export-button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-export .export-button:hover {
+    background-color: #ff4b4b;
+}
+
+.search-export input[type="search"] {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.logout-button:hover {
+    background-color: #e60000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f3f3f3;
+    color: black;
+}
+
+table td {
+    background-color: #fff;
+    color: black;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.actions .view, .actions .edit, .actions .delete {
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.actions .view:hover {
+    background-color: #3b5998;
+}
+
+.actions .edit:hover {
+    background-color: #ffca28;
+}
+
+.actions .delete:hover {
+    background-color: #e53935;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button, .pagination span {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button.active, .pagination button:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.pagination button:focus {
+    outline: none;
+}
+
+.pagination button:first-child, .pagination button:last-child {
+    border-radius: 4px;
+}
+
+.pagination button[disabled] {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coupons-per-page {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color:black;
+}
+
+.coupons-per-page select {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
